@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+  namespace: onlineeventbookingrafay
+data:
+  DATABASE_URL: "postgresql://postgres:1234@db.qauuhgzcvmktkkathhak.supabase.co:5432/postgres"
+  USER_SERVICE_URL: "http://user-service"
+  EVENT_SERVICE_URL: "http://event-service"
+  BOOKING_SERVICE_URL: "http://booking-service"
+  NOTIFICATION_SERVICE_URL: "http://notification-service"
